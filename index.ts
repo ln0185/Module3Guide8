@@ -50,11 +50,11 @@ const contactList: Contact [] = [
 console.log("Contact details with phone numbers:", contactList); 
 
 // Remove properties from the object
-
 for (const contact of contactList) {
     delete contact.phone;
-console.log("Contact details without phone numbers:", contactList); 
 }
+console.log("Contact details without phone numbers:", contactList); 
+
 // Output: will display the contact list without phone numbers
 
 // Add properties to the object

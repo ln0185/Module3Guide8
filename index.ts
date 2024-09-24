@@ -47,13 +47,20 @@ const contactList: Contact [] = [
         },
     }
 ];
+console.log("Contact details with phone numbers:", contactList); 
 
 // Remove properties from the object
-//delete contactList[0-2].phone;
+
+for (const contact of contactList) {
+    delete contact.phone;
 console.log("Contact details without phone numbers:", contactList); 
+}
 // Output: will display the contact list without phone numbers
 
 // Add properties to the object
+interface Contact {
+    nationality?:string;
+}
 contactList[1].nationality = "Icelandic";               
 console.log("Contact details with nationality of Heiða:", contactList); 
 // Output: will display nationality: "Icelandic" in contact 1 in the contact list

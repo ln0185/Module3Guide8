@@ -34,11 +34,13 @@ var contactList = [
         },
     }
 ];
+console.log("Contact details with phone numbers:", contactList);
 // Remove properties from the object
-//delete contactList[0-2].phone;
-console.log("Contact details without phone numbers:", contactList);
-// Output: will display the contact list without phone numbers
-// Add properties to the object
+for (var _i = 0, contactList_1 = contactList; _i < contactList_1.length; _i++) {
+    var contact = contactList_1[_i];
+    delete contact.phone;
+    console.log("Contact details without phone numbers:", contactList);
+}
 contactList[1].nationality = "Icelandic";
 console.log("Contact details with nationality of Heiða:", contactList);
 // Output: will display nationality: "Icelandic" in contact 1 in the contact list

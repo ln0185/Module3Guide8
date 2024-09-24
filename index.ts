@@ -54,7 +54,6 @@ for (const contact of contactList) {
     delete contact.phone;
 }
 console.log("Contact details without phone numbers:", contactList); 
-
 // Output: will display the contact list without phone numbers
 
 // Add properties to the object
